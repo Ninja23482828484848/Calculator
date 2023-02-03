@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+body {  
+    background-image: url(https://images.hdqwalls.com/download/triangles-colorful-background-nz-1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.display--bar {      
+    height: 9vh; 
+}
+button {
+    width: inherit;
+}
+.margin--right {
+    margin-right: 0.8rem;
+}
+#container {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 25%;
+    height: 50%;
+}
+#displayText {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#displayText::-webkit-scrollbar {
+    height: 0.8vh;
+}
+#displayText::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0.3rem;
+}
+#displayText::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255, 0.4);
+    border-radius: 0.3rem;
+}
+@media all and (max-width: 600px) {
+    #container {
+        width: 75%;
+        height: 50%;
+    }
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html class="w-100 h-100" lang="en">  
+<head>         
+    <meta charset="UTF-8">     
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Calculator.css">     
+</head>       
+<body class="w-100 h-100 d-flex justify-content-center align-items-center">
+    <div id="container" class="container d-flex flex-column justify-content-around rounded">
+        <div class="rounded bg-dark text-light display--bar d-flex justify-content-end align-items-center p-2"><h3 id="displayText" class="m-0"></h3></div>
+        <div class="container d-flex justify-content-between p-0">       
+            <button onclick="clearText()" class="btn btn-warning margin--right">C</button>         
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">&percnt;</button>         
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">&divide;</button>  
+            <button onclick="backSpace()" class="btn btn-light">&larr;</button>  
+        </div> 
+        <div class="container d-flex justify-content-between p-0">  
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">7</button>  
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">8</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">9</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light">&times;</button>
+        </div>
+        <div class="container d-flex justify-content-between p-0">
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">4</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">5</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">6</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light">&minus;</button>
+        </div>
+        <div class="container d-flex justify-content-between p-0">
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">1</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">2</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">3</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light">&plus;</button>
+        </div>
+        <div class="container d-flex justify-content-between p-0">
+            <button onclick="setBracket()" class="btn btn-light margin--right">&lpar; &rpar;</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">0</button>
+            <button onclick="displayText.textContent += this.textContent;" class="btn btn-light margin--right">&period;</button>
+            <button onclick="getResult()" class="btn btn-warning">&equals;</button>
+        </div>
+    </div>
+    <script src="JavaScript/Calculator.js"></script>   
+</body>
+</html>

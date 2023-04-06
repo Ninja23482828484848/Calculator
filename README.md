@@ -1,4 +1,5 @@
 # Calculator Project (HTML/CSS/JS)
 This is a calculator web app made by using html,css,bootstrap,jquery and javascript.
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[Live Demo](https://www.google.com "Calculator")
 # Hope you like it

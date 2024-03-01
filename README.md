@@ -1,5 +1,5 @@
 # Calculator Project
 This is a calculator web app made by using html,css,bootstrap,jquery and javascript.
 
-[Live Demo](https://ninja23482828484848.github.io/Calculator-Project-Web-Development/ "Calculator")
+[Live Demo](https://anshuman182005.github.io/ "Calculator")
 # Hope you like it
